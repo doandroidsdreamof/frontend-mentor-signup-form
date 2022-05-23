@@ -183,7 +183,7 @@ input:-ms-input-placeholder {
   padding-left: 1rem;
   font-weight: 600;
 }
-
+/**/
 input:focus:not(.containerright__formflex__form__submit) {
   border-color: rgba(0, 0, 0, 0.4) !important;
   outline: none;
