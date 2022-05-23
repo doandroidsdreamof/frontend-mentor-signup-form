@@ -35,5 +35,3 @@ inputForm.addEventListener('submit', (e) =>{
     warningPassword.style.display = "inline-block";  
     inputPassword.classList.add('add');  
 }});
-
-
