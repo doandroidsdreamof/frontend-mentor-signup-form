@@ -1,0 +1,258 @@
+$darkBLue: hsl(249, 10%, 26%) ;
+$grayishBlue: hsl(246, 25%, 77%);
+$blue: hsl(248, 32%, 49%);
+$red:  hsl(0, 100%, 74%) ;
+$green:  hsl(154, 59%, 51%);
+
+:root{
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+input{
+    font-family:'Poppins', sans-serif;
+}
+body{
+    max-width: 100%;
+    height: 50rem;
+    background-image: url(/images/bg-intro-desktop.png);
+    background-repeat: repeat;
+    background-color: $red;   
+    background-size: cover;
+    overflow: hidden;
+  
+   
+}
+.containerleft{
+    width: 35%;
+    height: 20rem;
+    position: absolute;
+    transform: translate(10rem,15rem);  
+ &__text{
+     margin-top: 1rem;
+ }
+ &__text--white{
+     color: rgba(255,255,255,0.75);
+     font-size: 1rem;
+ }
+ &__head--white{
+     color:white;
+     font-weight: 700;
+     font-size: 3rem;
+     line-height: 3rem;
+ }
+}
+.containerright{
+    width: 50%;
+    height: 90vh;
+    float: right;
+    &__formflex__form__submit:hover{
+        background:  hsl(154, 59%, 71%);
+        
+    }
+&__block{
+    width: 33%;
+    min-height: 30rem;
+    position: absolute;
+    transform: translateY(5rem);
+    background-color: white;
+    border-radius: 0.70rem;
+    justify-content: center;
+    display: grid;
+    padding: 2rem;
+    box-shadow: -1px 12px 12px -1px rgba(0,0,0,0.49);
+   -webkit-box-shadow: -1px 12px 12px -1px rgba(0,0,0,0.49);
+   -moz-box-shadow: -1px 12px 12px -1px rgba(0,0,0,0.49);
+
+}
+&__formflex{
+      min-width: 60%;
+      transform: translateX(1.4rem);
+}
+&__formflex__form > input{ 
+    border-radius: 0.20rem;
+    border: rgba(0,0,0,0.15) 0.10rem solid;
+    width: 90%;
+    height: 3.3rem;
+    margin: 0.50rem; 
+    padding:0.50rem;
+    transform: translateX(-1rem);
+       
+}
+
+&__formflex__form__submit{
+    background-color: $green;
+    border-radius: 0.30rem !important;
+    cursor:pointer;
+    &[value="CLAIM YOUR FREE TRIAL"] {
+        font-family:'Poppins', sans-serif;
+        font-weight: 600;
+        color:white;   
+      }
+}
+
+ &__terms{
+     color: $grayishBlue;
+     font-size: 0.70rem;
+     display: flex;
+     justify-content: center;
+     padding: auto 1rem;
+     transform: translateX(-2rem);
+ }
+ &__span2{
+    color: $red;
+ }
+&__block__text{
+    color: rgba(255,255,255,0.75);
+    display: flex;
+    background-color: $blue;
+    transform: translateY(4rem);
+    max-width: 66%;
+    height: 3.768rem;
+    border-radius: 0.70rem;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    font-size: 0.90rem;
+    box-shadow: -1px 12px 10px -1px rgba(0,0,0,0.49);
+    -webkit-box-shadow: -1px 12px 10px -1px rgba(0,0,0,0.49);
+    -moz-box-shadow: -1px 12px 10px -1px rgba(0,0,0,0.49);
+}
+&__span{
+    color: white !important;
+    
+}
+
+}
+@mixin placeholder{
+    &::-moz-placeholder          {@content}
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &:-ms-input-placeholder      {@content}  
+}
+input{
+    @include placeholder {
+      font-size: 0.90rem;
+      color: black;
+      font-family:'Poppins', sans-serif;
+      padding-left: 1rem;  
+      font-weight: 600;   
+    } 
+}
+input:focus:not(.containerright__formflex__form__submit){
+    border-color: rgba(0,0,0,0.40) !important;
+    outline: none;
+}
+
+@media only screen and (max-width: 720px){
+    body{
+        overflow:visible; 
+        background-color:black;  
+        overflow-x: hidden;   
+        justify-content: center;
+        text-align: center;         
+    }
+.containerleft{
+    transform: translate(2rem,2rem);
+    text-align: center;
+    width: 76%;
+    &__head{
+        font-size:1.7rem;
+        line-height: normal;
+     
+    }
+    &__text{
+        font-size: 0.80rem;
+    }
+    &__text br{
+        display: none;
+    }
+}
+.containerright{
+    top:65%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    position: absolute; 
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;  
+    text-align: center;
+    &__block{
+        min-width: 19rem;
+        justify-content: center;
+        
+    }
+    &__block__text{
+        min-width: 19rem;
+        font-size: 0.70rem;
+    }  
+    &__formflex__form > input{
+        width: 100%;
+        transform: translateX(-2rem);
+        
+    }
+    &__terms{
+        text-align: center;
+        margin-right: -1rem;
+    }
+  
+}
+}
+
+.containerright{
+    &__warning1{
+        color: $red;
+        font-size: 0.64rem;
+        font-weight: 600;
+        display: none;
+        
+    }
+    &__warning2{
+        color: $red;
+        font-size: 0.64rem;
+        font-weight: 600;
+        display: none;
+    }
+    &__warning3{
+        color: $red;
+        font-size: 0.64rem;
+        font-weight: 600;
+        display: none;
+    }
+    &__warning4{
+        color: $red;
+        font-size: 0.64rem;
+        font-weight: 600;
+        display: none;
+    }
+
+}
+
+
+#name.add {
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: 97%;   
+   
+  }
+  #lastname.add {
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: 97%;
+    
+   
+  }
+  #email.add {
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: 97%;
+    
+   
+  }
+  #password.add {
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: 97%;
+
+  }

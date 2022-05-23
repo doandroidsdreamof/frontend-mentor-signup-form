@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+  <div class="background">
+  <div class="containerleft">
+    <h1 class="containerleft__head containerleft__head--white">Learn to code by <br> watching others</h1>
+    <p class="containerleft__text containerleft__text--white">See how experienced developers solve problems in real-time.<br> Watching scripted tutorials is great,but understanding how developers think is invaluable.</p>
+  </div>
+  <div class="containerright">
+    <p class="containerright__block__text containerright__block__text--white"><span class="containerright__span containerright__span--bold--white"> <strong> Try it free 7 days </strong> </span> &nbsp;then $20/mo. thereafter</p>
+    <di class="containerright__block  containerright__block--blue">
+    <div class="containerright__formflex">
+      <form action="" class="containerright__formflex__form" >
+        <input id="name" type="text" class="containerright__formflex__form__name here" placeholder="Name" >
+        <div class="containerright__warning1 all"> First Name cannot be empty</div>
+        <input id="lastname" type="text" class="containerright__formflex__form__lastname here" placeholder="Last Name" >
+        <div class="containerright__warning2 all"> Last Name cannot be empty</div>
+        <input id="email" type="email" class="containerright__formflex__form__mail here" placeholder="Email Address" >
+        <div class="containerright__warning3 all">Looks like this is not an email</div>      
+        <input id="password" type="password" class="containerright__formflex__form__password here" placeholder="Password" >
+        <div class="containerright__warning4 all">Password cannot be empty</div>      
+        <input id="submit" type="submit" class="containerright__formflex__form__submit" value="CLAIM YOUR FREE TRIAL">
+      </form>
+      <div class="containerright__terms">
+        <p class="containerrigt__terms__text containerrigt__terms__text--white">  By clicking the button, you are agreeing to our <span class="containerright__span2 containerright__span2--red"><strong>Terms and Services</strong>
+        </span>
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

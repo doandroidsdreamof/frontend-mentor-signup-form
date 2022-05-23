@@ -1,0 +1,302 @@
+:root {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  max-width: 100%;
+  height: 50rem;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-repeat: repeat;
+  background-color: #ff7a7a;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.containerleft {
+  width: 35%;
+  height: 20rem;
+  position: absolute;
+  -webkit-transform: translate(10rem, 15rem);
+          transform: translate(10rem, 15rem);
+}
+
+.containerleft__text {
+  margin-top: 1rem;
+}
+
+.containerleft__text--white {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+}
+
+.containerleft__head--white {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.containerright {
+  width: 50%;
+  height: 90vh;
+  float: right;
+}
+
+.containerright__formflex__form__submit:hover {
+  background: #89e1bb;
+}
+
+.containerright__block {
+  width: 33%;
+  min-height: 30rem;
+  position: absolute;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+  background-color: white;
+  border-radius: 0.70rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem;
+  box-shadow: -1px 12px 12px -1px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: -1px 12px 12px -1px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: -1px 12px 12px -1px rgba(0, 0, 0, 0.49);
+}
+
+.containerright__formflex {
+  min-width: 60%;
+  -webkit-transform: translateX(1.4rem);
+          transform: translateX(1.4rem);
+}
+
+.containerright__formflex__form > input {
+  border-radius: 0.20rem;
+  border: rgba(0, 0, 0, 0.15) 0.1rem solid;
+  width: 90%;
+  height: 3.3rem;
+  margin: 0.50rem;
+  padding: 0.50rem;
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+}
+
+.containerright__formflex__form__submit {
+  background-color: #38cc8c;
+  border-radius: 0.30rem !important;
+  cursor: pointer;
+}
+
+.containerright__formflex__form__submit[value="CLAIM YOUR FREE TRIAL"] {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.containerright__terms {
+  color: #b9b6d3;
+  font-size: 0.70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto 1rem;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+}
+
+.containerright__span2 {
+  color: #ff7a7a;
+}
+
+.containerright__block__text {
+  color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6055a5;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  max-width: 66%;
+  height: 3.768rem;
+  border-radius: 0.70rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.90rem;
+  box-shadow: -1px 12px 10px -1px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: -1px 12px 10px -1px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: -1px 12px 10px -1px rgba(0, 0, 0, 0.49);
+}
+
+.containerright__span {
+  color: white !important;
+}
+
+input::-moz-placeholder {
+  font-size: 0.90rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 0.90rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+input:-moz-placeholder {
+  font-size: 0.90rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+input:-ms-input-placeholder {
+  font-size: 0.90rem;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 1rem;
+  font-weight: 600;
+}
+
+input:focus:not(.containerright__formflex__form__submit) {
+  border-color: rgba(0, 0, 0, 0.4) !important;
+  outline: none;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    overflow: visible;
+    background-color: black;
+    overflow-x: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .containerleft {
+    -webkit-transform: translate(2rem, 2rem);
+            transform: translate(2rem, 2rem);
+    text-align: center;
+    width: 76%;
+  }
+  .containerleft__head {
+    font-size: 1.7rem;
+    line-height: normal;
+  }
+  .containerleft__text {
+    font-size: 0.80rem;
+  }
+  .containerleft__text br {
+    display: none;
+  }
+  .containerright {
+    top: 65%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .containerright__block {
+    min-width: 19rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .containerright__block__text {
+    min-width: 19rem;
+    font-size: 0.70rem;
+  }
+  .containerright__formflex__form > input {
+    width: 100%;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  .containerright__terms {
+    text-align: center;
+    margin-right: -1rem;
+  }
+}
+
+.containerright__warning1 {
+  color: #ff7a7a;
+  font-size: 0.64rem;
+  font-weight: 600;
+  display: none;
+}
+
+.containerright__warning2 {
+  color: #ff7a7a;
+  font-size: 0.64rem;
+  font-weight: 600;
+  display: none;
+}
+
+.containerright__warning3 {
+  color: #ff7a7a;
+  font-size: 0.64rem;
+  font-weight: 600;
+  display: none;
+}
+
+.containerright__warning4 {
+  color: #ff7a7a;
+  font-size: 0.64rem;
+  font-weight: 600;
+  display: none;
+}
+
+#name.add {
+  background: url(images/icon-error.svg) no-repeat;
+  background-position: 97%;
+}
+
+#lastname.add {
+  background: url(images/icon-error.svg) no-repeat;
+  background-position: 97%;
+}
+
+#email.add {
+  background: url(images/icon-error.svg) no-repeat;
+  background-position: 97%;
+}
+
+#password.add {
+  background: url(images/icon-error.svg) no-repeat;
+  background-position: 97%;
+}
+/*# sourceMappingURL=input.css.map */
