@@ -12,7 +12,7 @@ const warninMail = document.querySelector('.containerright__warning3');
 const warningPassword = document.querySelector('.containerright__warning4');
 
 
-const inputError= "url(/images/icon-error.svg) no-repeat";
+const inputError= "url(images/icon-error.svg) no-repeat";
 const allWarning = document.querySelectorAll('.all');
 
 inputForm.addEventListener('submit', (e) =>{
